@@ -4,8 +4,9 @@ import { PROFILE } from '../data/profile'
 
 const NAV_ITEMS = [
   { path: '/', label: 'Home', end: true },
-  { path: '/education', label: 'Education' },
+  { path: '/research', label: 'Research' },
   { path: '/publications', label: 'Publications' },
+  { path: '/education', label: 'Education' },
   { path: '/achievements', label: 'Achievements' },
   { path: '/contact', label: 'Contact' },
 ]

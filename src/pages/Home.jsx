@@ -2,8 +2,8 @@ import { useState } from 'react'
 import { PROFILE } from '../data/profile'
 
 export default function Home() {
-  const { tagline } = PROFILE
   const [photoSrc, setPhotoSrc] = useState(PROFILE.photo)
+  const [bioLead] = PROFILE.homeBio
 
   return (
     <section className="hero section">
@@ -25,16 +25,44 @@ export default function Home() {
 
         <div className="hero__content">
           <h1 className="hero__title">{PROFILE.name}</h1>
-          <p className="hero__role">{PROFILE.role}</p>
+          <p className="hero__role hero__role--cursive">{PROFILE.role}</p>
           <div className="hero__prose">
-            <p className="hero__tagline">
-              {tagline.beforeAdvisor}
-              <a href={tagline.advisor.href} target="_blank" rel="noreferrer">
-                {tagline.advisor.name}
+            <p className="hero__bio">
+              {bioLead.beforeInstitution}
+              <a
+                href={bioLead.institution.href}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {bioLead.institution.name}
               </a>
-              {tagline.afterAdvisor}
+              {bioLead.beforeAdvisor}
+              <a
+                href={bioLead.advisor.href}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {bioLead.advisor.name}
+              </a>
+              {bioLead.afterAdvisor}
             </p>
+            <p className="hero__bio">{PROFILE.homeBio[1]}</p>
           </div>
+          <ul className="hero__profile-links" aria-label="Profile links">
+            {PROFILE.profileLinks.map(({ label, href, external }) => (
+              <li key={label}>
+                <a
+                  href={href}
+                  className="hero__profile-link"
+                  {...(external
+                    ? { target: '_blank', rel: 'noreferrer' }
+                    : {})}
+                >
+                  {label}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>
