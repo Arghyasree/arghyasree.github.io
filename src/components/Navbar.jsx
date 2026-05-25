@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { PROFILE } from '../data/profile'
 
@@ -14,6 +14,7 @@ const NAV_ITEMS = [
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const navRef = useRef(null)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24)
@@ -24,9 +25,22 @@ export default function Navbar() {
 
   const closeMenu = useCallback(() => setMenuOpen(false), [])
 
+  useEffect(() => {
+    if (!menuOpen) return undefined
+
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setMenuOpen(false)
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [menuOpen])
+
   return (
     <header className={`nav-wrap ${scrolled ? 'nav-wrap--scrolled' : ''}`}>
-      <nav className="nav site-nav" aria-label="Primary">
+      <nav ref={navRef} className="nav site-nav" aria-label="Primary">
         <NavLink to="/" className="nav__brand" end onClick={closeMenu}>
           <span className="nav__brand-mark" aria-hidden="true" />
           <span className="nav__brand-text">{PROFILE.name}</span>

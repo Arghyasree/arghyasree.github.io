@@ -29,7 +29,7 @@ export const PROFILE = {
   homeBio: [
     {
       beforeInstitution:
-        'I am a Junior Research Fellow in Computer Science at the Computer Vision and Pattern Recognition Unit, ',
+        'I am a PhD student at the ',
       institution: {
         name: 'Indian Statistical Institute, Kolkata',
         href: 'https://www.isical.ac.in/',
@@ -124,12 +124,7 @@ export const PROFILE = {
     {
       degree: 'Class XII (ISC)',
       school: 'Modern High School for Girls',
-      grade: '94%',
-    },
-    {
-      degree: 'Class X (ICSE)',
-      school: 'Our Lady Queen of the Missions School',
-      grade: '95.2%',
+      years: '2017 — 2019',
     },
   ],
   achievements: [

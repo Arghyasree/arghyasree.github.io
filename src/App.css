@@ -477,6 +477,24 @@ main {
   }
 }
 
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: clamp(1.55rem, 7vw, 2rem);
+    line-height: 1.22;
+  }
+
+  .hero__prose,
+  .hero__bio {
+    text-align: left;
+    text-justify: auto;
+    word-spacing: normal;
+  }
+
+  .hero__bio {
+    line-height: 1.7;
+  }
+}
+
 /* —— Section headers —— */
 .section-head {
   margin-bottom: clamp(28px, 4vw, 40px);
