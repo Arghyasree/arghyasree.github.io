@@ -69,6 +69,13 @@ export const PROFILE = {
         'Reliable and interpretable machine learning for biomedical decision-making.',
     },
   ],
+  mentorship: [
+    {
+      title: 'ISI Summer Internship',
+      year: '2026',
+      mentees: 'Akanksha Mukherjee, Debomouli Sarkar',
+    },
+  ],
   publications: [
     {
       type: 'journal',

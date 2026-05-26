@@ -23,6 +23,18 @@ export default function Research() {
             ))}
           </div>
         </section>
+        <section className="research-interests" aria-labelledby="mentorship-heading">
+          <h2 className="research-interests__heading" id="mentorship-heading">
+            Mentorship
+          </h2>
+          <div className="research-plain-list">
+            {PROFILE.mentorship.map((item) => (
+              <p className="research-plain-list__item" key={`${item.title}-${item.year}`}>
+                {item.title}, {item.year} — {item.mentees}
+              </p>
+            ))}
+          </div>
+        </section>
       </div>
     </RevealSection>
   )
