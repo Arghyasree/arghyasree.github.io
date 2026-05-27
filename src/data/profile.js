@@ -114,13 +114,18 @@ export const PROFILE = {
   ],
   experience: [
     {
+      title: 'Junior Research Fellow in Computer Science',
+      year: '2025 – present',
+      detail: 'Indian Statistical Institute, Kolkata',
+    },
+    {
       title: 'Teaching Assistant — Object-Oriented Systems Lab',
-      year: '2025',
+      year: '2026',
       detail: 'B.E. (IT) 2nd Year, Jadavpur University',
     },
     {
       title: 'Teaching Assistant — Machine Learning Lab',
-      year: '2024',
+      year: '2025',
       detail: 'B.E. (IT) 4th Year, Jadavpur University',
     },
   ],
