@@ -37,9 +37,9 @@ export const PROFILE = {
       beforeAdvisor: ', advised by ',
       advisor: ADVISORS.utpal,
       afterAdvisor:
-        '. My research interests lie at the intersection of AI for scientific discovery, computational biology, and trustworthy machine learning.',
+        '. My research interests lie at the intersection of AI for scientific discovery, computational drug discovery, and trustworthy machine learning.',
     },
-    'I am particularly interested in developing intelligent computational methods for problems in covalent drug discovery, PROTACs, molecular representation learning, and molecular property prediction. My broader goal is to build reliable, explainable, and data-efficient AI systems that can assist in biological knowledge extraction, drug design, and decision-making in complex biomedical domains.',
+    'I am particularly interested in developing intelligent computational methods for problems in PROTACs, covalent databases, molecular representation learning, and molecular property prediction. My broader goal is to build explainable and data-efficient AI systems that can assist in biological knowledge extraction, drug design, and decision-making in complex biomedical domains.',
   ],
   profileLinks: [
     { label: 'Email', href: `mailto:${LINKS.emailPersonal}` },
@@ -74,6 +74,16 @@ export const PROFILE = {
       title: 'ISI Summer Internship',
       year: '2026',
       mentees: 'Akanksha Mukherjee, Debomouli Sarkar',
+    },
+    {
+      title: 'B.E. Research Guidance, Jadavpur University',
+      year: '2025',
+      mentees: 'MD Soyeb Hoque, Gunjan Basak, Dipan Deb, Nikhil Sah',
+    },
+    {
+      title: 'M.E. Research Guidance, Jadavpur University',
+      year: '2025',
+      mentees: 'Sankhadip Bera, Debgandhar Ghosh',
     },
   ],
   publications: [
@@ -120,12 +130,12 @@ export const PROFILE = {
     },
     {
       title: 'Teaching Assistant — Object-Oriented Systems Lab',
-      year: '2026',
+      year: '2025',
       detail: 'B.E. (IT) 2nd Year, Jadavpur University',
     },
     {
       title: 'Teaching Assistant — Machine Learning Lab',
-      year: '2025',
+      year: '2024',
       detail: 'B.E. (IT) 4th Year, Jadavpur University',
     },
   ],
@@ -136,7 +146,7 @@ export const PROFILE = {
       unit: 'Computer Vision and Pattern Recognition Unit',
       advisor: ADVISORS.utpal,
       researchArea:
-        'Computational Biology, Drug Design, and Biomedical Data Analysis',
+        'Computational Drug Discovery, PROTACs',
       years: '2025 — Present',
     },
     {
@@ -179,7 +189,7 @@ export const PROFILE = {
     lines: [
       'Computer Vision and Pattern Recognition Unit,',
       'Indian Statistical Institute,',
-      '203 B.T. Road, Kolkata 700108, India',
+      '203 B.T. Road, Kolkata - 700108, India',
     ],
   },
 }

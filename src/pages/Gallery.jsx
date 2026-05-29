@@ -27,8 +27,7 @@ export default function Gallery() {
             ))}
           </div>
           <figcaption className="gallery-group__caption">
-            Receiving the University Gold Medal for securing First Class First
-            Position in M.E., Jadavpur University, 2025.
+            Receiving the University Gold Medal from the Hon’ble Vice-Chancellor Prof. Chiranjib Bhattacharjee, Jadavpur University, 2025.
           </figcaption>
         </figure>
       </div>
