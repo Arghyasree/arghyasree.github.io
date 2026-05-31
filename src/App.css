@@ -531,7 +531,7 @@ main {
 /* —— Research —— */
 .research-interests {
   max-width: 100%;
-  margin-bottom: clamp(24px, 3.5vw, 32px);
+  margin-bottom: clamp(30px, 4.25vw, 40px);
 }
 
 .research-interests:last-child {
@@ -539,48 +539,18 @@ main {
 }
 
 .research-interests__heading {
-  margin: 0 0 16px;
+  margin: 0 0 18px;
   font-family: var(--font-serif);
   font-size: 1.0625rem;
   font-weight: 600;
   color: var(--text-heading);
 }
 
-.research-interests__grid {
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.research-interest {
-  padding: 18px 20px;
-  background: rgba(255, 255, 255, 0.58);
-  border: 1px solid var(--border);
-  border-radius: 2px;
-  box-shadow: var(--shadow-sm);
-}
-
-.research-interest__title {
-  margin: 0 0 6px;
-  font-size: 0.9725rem;
-  font-weight: 600;
-  line-height: 1.45;
-  color: var(--text-heading);
-}
-
-.research-interest__description {
+.research-plain-text {
   margin: 0;
   font-size: 0.9375rem;
-  line-height: 1.6;
-  color: var(--text-muted);
-}
-
-@media (max-width: 640px) {
-  .research-interests__grid {
-    grid-template-columns: 1fr;
-  }
+  line-height: 1.7;
+  color: var(--text);
 }
 
 .research-plain-list {
@@ -589,10 +559,28 @@ main {
 }
 
 .research-plain-list__item {
-  margin: 0;
-  font-size: 0.9725rem;
-  line-height: 1.6;
+  margin: 0 0 18px;
+  font-size: 0.9375rem;
+  line-height: 1.65;
   color: var(--text);
+}
+
+.research-plain-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.research-entry {
+  max-width: 100%;
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+.research-entry__label {
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--text-heading);
 }
 
 /* —— Publications —— */
@@ -708,13 +696,15 @@ main {
   padding: 0;
   justify-self: end;
   align-self: start;
-  font-family: var(--font-sans);
-  font-size: 1rem;
-  font-weight: 500;
+  font-family: inherit;
+  font-size: 0.9375rem;
+  font-style: italic;
+  font-weight: 400;
   line-height: 1.35;
-  color: var(--text-heading);
+  color: var(--text-muted);
   text-align: right;
   white-space: nowrap;
+  transform: translateY(-1px);
 }
 
 .experience-row__detail {
@@ -944,9 +934,9 @@ main {
   margin: 0;
   padding: 0;
   font-family: var(--font-sans);
-  font-size: 1rem;
+  font-size: 0.9725rem;
   font-weight: 500;
-  line-height: 1.35;
+  line-height: 1.45;
   color: var(--text-heading);
 }
 
@@ -955,18 +945,20 @@ main {
   padding: 0;
   justify-self: end;
   align-self: start;
-  font-family: var(--font-sans);
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.35;
-  color: var(--text-heading);
+  font-family: inherit;
+  font-size: 0.9375rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.45;
+  color: var(--text-muted);
   text-align: right;
   white-space: nowrap;
+  transform: translateY(-1px);
 }
 
 .honors-list__detail {
   margin: 4px 0 0;
-  font-size: 0.9rem;
+  font-size: 0.9375rem;
   line-height: 1.6;
   color: var(--text-muted);
 }

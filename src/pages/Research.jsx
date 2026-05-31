@@ -12,16 +12,33 @@ export default function Research() {
           <h2 className="research-interests__heading" id="research-interests-heading">
             Research Interests
           </h2>
-          <div className="research-interests__grid">
-            {PROFILE.researchInterests.map((interest) => (
-              <article className="research-interest" key={interest.title}>
-                <h3 className="research-interest__title">{interest.title}</h3>
-                <p className="research-interest__description">
-                  {interest.description}
-                </p>
-              </article>
-            ))}
-          </div>
+          <p className="research-plain-text">
+            Deep Learning, Language Models, Computational Drug Discovery, PROTACs,
+            Medical Data Analysis.
+          </p>
+        </section>
+        <section className="research-interests" aria-labelledby="current-research-heading">
+          <h2 className="research-interests__heading" id="current-research-heading">
+            Current Research
+          </h2>
+          <p className="research-entry">
+            <span className="research-entry__label">Computational Drug Discovery</span> {'\u2014'} Developing
+            AI-driven methods for PROTACs and covalent drug discovery, with a
+            focus on molecular representation learning, property prediction, and
+            reliable models for data-scarce drug design problems.
+          </p>
+        </section>
+        <section className="research-interests" aria-labelledby="previous-research-heading">
+          <h2 className="research-interests__heading" id="previous-research-heading">
+            Previous Research
+          </h2>
+          <p className="research-entry">
+            <span className="research-entry__label">Medical Data Analysis</span> {'\u2014'} Worked
+            on deep learning-based analysis of multimodal biomedical data,
+            including EEG and MRI, for the detection of neurological and
+            psychiatric disorders such as schizophrenia, Parkinson&apos;s disease,
+            and Alzheimer&apos;s disease.
+          </p>
         </section>
         <section className="research-interests" aria-labelledby="mentorship-heading">
           <h2 className="research-interests__heading" id="mentorship-heading">
@@ -30,7 +47,7 @@ export default function Research() {
           <div className="research-plain-list">
             {PROFILE.mentorship.map((item) => (
               <p className="research-plain-list__item" key={`${item.title}-${item.year}`}>
-                {item.title}, {item.year} — {item.mentees}
+                {item.title}, {item.year} {'\u2014'} {item.mentees}
               </p>
             ))}
           </div>
