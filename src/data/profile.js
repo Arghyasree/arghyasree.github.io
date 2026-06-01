@@ -38,7 +38,7 @@ export const PROFILE = {
       afterAdvisor:
         '. My research interests lie at the intersection of artificial intelligence, computational drug discovery, and trustworthy machine learning.',
     },
-    'I\'m particularly interested in developing AI-driven methods for targeted protein degradation and molecular design, with a focus on PROTACs, covalent inhibitors, molecular representation learning, and molecular property prediction. My broader goal is to build explainable and data-efficient AI systems that can support biological knowledge extraction, drug design, and decision-making in complex biomedical domains.',
+    'I\'m particularly interested in developing AI-driven methods for targeted protein degradation and molecular design, with a focus on PROTACs, covalent inhibitors, molecular representation learning, and molecular property prediction. My broader goal is to build reliable, explainable, and data-efficient AI systems that can support biological knowledge extraction, drug design, and decision-making in complex biomedical domains.',
   ],
   profileLinks: [
     { label: 'Email', href: `mailto:${LINKS.emailPersonal}` },
