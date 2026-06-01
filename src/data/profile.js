@@ -25,11 +25,15 @@ export const PROFILE = {
   name: 'Arghyasree Saha',
   selfName: 'Arghyasree Saha',
   selfCitationName: 'A. Saha',
-  role: 'PhD Student in Computer Science',
+  role: 'PhD Student in Computer Science, ISI Kolkata',
   homeBio: [
     {
-      beforeInstitution:
-        'I am a PhD student at the ',
+      beforeInstitution: 'I\'m a PhD student at the ',
+      unit: {
+        name: 'Computer Vision and Pattern Recognition Unit',
+        href: 'https://oldweb.isical.ac.in/~cvpr/CVPR-WebSite/index.html',
+      },
+      afterUnit: ', ',
       institution: {
         name: 'Indian Statistical Institute, Kolkata',
         href: 'https://www.isical.ac.in/',
@@ -37,9 +41,9 @@ export const PROFILE = {
       beforeAdvisor: ', advised by ',
       advisor: ADVISORS.utpal,
       afterAdvisor:
-        '. My research interests lie at the intersection of AI for scientific discovery, computational drug discovery, and trustworthy machine learning.',
+        '. My research interests lie at the intersection of artificial intelligence, computational drug discovery, and trustworthy machine learning.',
     },
-    'I am particularly interested in developing intelligent computational methods for problems in PROTACs, covalent databases, molecular representation learning, and molecular property prediction. My broader goal is to build explainable and data-efficient AI systems that can assist in biological knowledge extraction, drug design, and decision-making in complex biomedical domains.',
+    'I\'m particularly interested in developing AI-driven methods for targeted protein degradation and molecular design, with a focus on PROTACs, covalent inhibitors, molecular representation learning, and molecular property prediction. My broader goal is to build explainable and data-efficient AI systems that can support biological knowledge extraction, drug design, and decision-making in complex biomedical domains.',
   ],
   profileLinks: [
     { label: 'Email', href: `mailto:${LINKS.emailPersonal}` },

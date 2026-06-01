@@ -24,9 +24,17 @@ export default function Home() {
             <p className="hero__bio">
               {bioLead.beforeInstitution}
               <a
+                href={bioLead.unit.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {bioLead.unit.name}
+              </a>
+              {bioLead.afterUnit}
+              <a
                 href={bioLead.institution.href}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 {bioLead.institution.name}
               </a>
@@ -34,7 +42,7 @@ export default function Home() {
               <a
                 href={bioLead.advisor.href}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 {bioLead.advisor.name}
               </a>
@@ -49,7 +57,7 @@ export default function Home() {
                   href={href}
                   className="hero__profile-link"
                   {...(external
-                    ? { target: '_blank', rel: 'noreferrer' }
+                    ? { target: '_blank', rel: 'noopener noreferrer' }
                     : {})}
                 >
                   {label}
