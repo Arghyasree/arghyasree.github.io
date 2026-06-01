@@ -485,8 +485,8 @@ main {
 
   .hero__prose,
   .hero__bio {
-    text-align: left;
-    text-justify: auto;
+    text-align: justify;
+    text-justify: inter-word;
     word-spacing: normal;
   }
 
