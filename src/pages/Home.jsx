@@ -23,14 +23,18 @@ export default function Home() {
           <div className="hero__prose">
             <p className="hero__bio">
               {bioLead.beforeInstitution}
-              <a
-                href={bioLead.unit.href}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {bioLead.unit.name}
-              </a>
-              {bioLead.afterUnit}
+              {bioLead.unit ? (
+                <>
+                  <a
+                    href={bioLead.unit.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {bioLead.unit.name}
+                  </a>
+                  {bioLead.afterUnit}
+                </>
+              ) : null}
               <a
                 href={bioLead.institution.href}
                 target="_blank"

@@ -29,11 +29,6 @@ export const PROFILE = {
   homeBio: [
     {
       beforeInstitution: 'I\'m a PhD student at the ',
-      unit: {
-        name: 'Computer Vision and Pattern Recognition Unit',
-        href: 'https://oldweb.isical.ac.in/~cvpr/CVPR-WebSite/index.html',
-      },
-      afterUnit: ', ',
       institution: {
         name: 'Indian Statistical Institute, Kolkata',
         href: 'https://www.isical.ac.in/',
