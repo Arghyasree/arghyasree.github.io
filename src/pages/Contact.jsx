@@ -54,7 +54,7 @@ export default function Contact() {
           </div>
 
           <div className="contact-panel__block">
-            <h2 className="contact-panel__heading">Affiliation</h2>
+            <h2 className="contact-panel__heading">Institutional Address</h2>
             {PROFILE.affiliation.lines.map((line) => (
               <p key={line} className="contact-panel__line">
                 {line}

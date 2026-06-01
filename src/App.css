@@ -491,7 +491,8 @@ main {
   }
 
   .hero__bio {
-    line-height: 1.7;
+    font-size: 0.975rem;
+    line-height: 1.68;
   }
 }
 
