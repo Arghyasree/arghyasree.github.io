@@ -572,10 +572,14 @@ main {
 
 .research-entry {
   max-width: 100%;
-  margin: 0;
+  margin: 0 0 18px;
   font-size: 1rem;
   line-height: 1.75;
   color: var(--text);
+}
+
+.research-entry:last-child {
+  margin-bottom: 0;
 }
 
 .research-entry__label {
@@ -772,6 +776,11 @@ main {
 @media (max-width: 640px) {
   .gallery-grid {
     grid-template-columns: 1fr;
+  }
+
+  .gallery-group__caption {
+    text-align: justify;
+    text-justify: inter-word;
   }
 }
 
