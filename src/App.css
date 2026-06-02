@@ -777,10 +777,6 @@ main {
   .gallery-grid {
     grid-template-columns: 1fr;
   }
-
-  .gallery-group__caption {
-    text-align: left;
-  }
 }
 
 /* —— Education (vertical timeline) —— */
