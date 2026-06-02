@@ -779,8 +779,7 @@ main {
   }
 
   .gallery-group__caption {
-    text-align: justify;
-    text-justify: inter-word;
+    text-align: left;
   }
 }
 
