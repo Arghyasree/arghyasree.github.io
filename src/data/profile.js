@@ -25,7 +25,7 @@ export const PROFILE = {
   name: 'Arghyasree Saha',
   selfName: 'Arghyasree Saha',
   selfCitationName: 'A. Saha',
-  role: 'PhD Student in Computer Science, ISI Kolkata',
+  role: 'PhD Student in Computer Science',
   homeBio: [
     {
       beforeInstitution: 'I\'m a PhD student at the ',

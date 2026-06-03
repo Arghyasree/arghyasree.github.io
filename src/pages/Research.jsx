@@ -17,20 +17,11 @@ export default function Research() {
             Medical Data Analysis.
           </p>
         </section>
-        <section className="research-interests" aria-labelledby="research-themes-heading">
-          <h2 className="research-interests__heading" id="research-themes-heading">
-            Research Themes
+        <section className="research-interests" aria-labelledby="updates-heading">
+          <h2 className="research-interests__heading" id="updates-heading">
+            Updates
           </h2>
-          <p className="research-entry">
-            <span className="research-entry__label">Computational Drug Discovery</span> {'\u2014'} Developing AI-driven methods for targeted protein degradation and molecular design, with a focus on PROTACs, molecular representation learning, and molecular property prediction.
-          </p>
-          <p className="research-entry">
-            <span className="research-entry__label">Medical Data Analysis</span> {'\u2014'} Worked
-            on deep learning-based analysis of multimodal clinical data,
-            including EEG and MRI, for the detection of neurological and
-            psychiatric disorders such as schizophrenia, Parkinson&apos;s disease,
-            and Alzheimer&apos;s disease.
-          </p>
+          <p className="research-plain-text">Details will be added soon.</p>
         </section>
         <section className="research-interests" aria-labelledby="mentorship-heading">
           <h2 className="research-interests__heading" id="mentorship-heading">
