@@ -116,7 +116,7 @@ export const PROFILE = {
       title:
         'SZ-Net: A Hybrid CNN-BiLSTM-BiGRU Framework for Schizophrenia Detection and Classification Using Electroencephalogram Signals',
       authors: ['A. Saha', 'P. K. Singh'],
-      venue: 'Recent Advances in Artificial Neural Networks',
+      venue: 'Recent Advances in Artificial Neural Networks: Case Studies and Applications',
       year: 2026,
       href: 'https://link.springer.com/chapter/10.1007/978-3-032-13497-4_5',
     },
