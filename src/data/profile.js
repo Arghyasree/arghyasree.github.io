@@ -25,10 +25,10 @@ export const PROFILE = {
   name: 'Arghyasree Saha',
   selfName: 'Arghyasree Saha',
   selfCitationName: 'A. Saha',
-  role: 'PhD Student in Computer Science',
+  role: 'Research Scholar, ISI Kolkata',
   homeBio: [
     {
-      beforeInstitution: 'I\'m a PhD student at the ',
+      beforeInstitution: 'I am pursuing a PhD in Computer Science at the ',
       institution: {
         name: 'Indian Statistical Institute, Kolkata',
         href: 'https://www.isical.ac.in/',
@@ -36,9 +36,9 @@ export const PROFILE = {
       beforeAdvisor: ', advised by ',
       advisor: ADVISORS.utpal,
       afterAdvisor:
-        '. My research interests lie at the intersection of artificial intelligence, computational drug discovery, and molecular design.',
+        '. My research interests lie at the intersection of artificial intelligence, computational drug discovery, and PROTAC design.',
     },
-    'I\'m particularly interested in developing AI-driven methods for targeted protein degradation and PROTACs, covalent inhibitors, molecular representation learning, and molecular property prediction. My broader goal is to build reliable, explainable, and data-efficient AI systems that can support biological knowledge extraction, drug design, and decision-making in complex biomedical domains.',
+    'My current research focuses on developing AI-driven methods for PROTAC linker optimization and molecular property prediction, particularly for modelling degradation activity and cell permeability using experimentally measured data. I am also exploring LLM-assisted approaches for scientific information extraction and dataset enrichment in data-scarce drug discovery settings. More broadly, I aim to develop reliable, explainable, and data-efficient computational methods to support molecular design and informed decision-making in targeted protein degradation.',
   ],
   profileLinks: [
     { label: 'Email', href: `mailto:${LINKS.emailPersonal}` },
@@ -75,14 +75,14 @@ export const PROFILE = {
       mentees: 'Akanksha Mukherjee, Debomouli Sarkar',
     },
     {
-      title: 'B.E. Research Guidance, Jadavpur University',
-      year: '2025',
-      mentees: 'MD Soyeb Hoque, Gunjan Basak, Dipan Deb, Nikhil Sah',
-    },
-    {
       title: 'M.E. Research Guidance, Jadavpur University',
       year: '2025',
       mentees: 'Sankhadip Bera, Debgandhar Ghosh',
+    },
+    {
+      title: 'B.E. Research Guidance, Jadavpur University',
+      year: '2025',
+      mentees: 'MD Soyeb Hoque, Gunjan Basak, Dipan Deb, Nikhil Sah',
     },
   ],
   publications: [
