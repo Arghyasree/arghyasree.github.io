@@ -38,7 +38,7 @@ export const PROFILE = {
       afterAdvisor:
         '. My research interests lie at the intersection of artificial intelligence, computational drug discovery, and PROTAC design.',
     },
-    'My current research focuses on developing AI-driven methods for PROTAC linker optimization and molecular property prediction, particularly for modelling degradation activity and cell permeability using experimentally measured data. I am also exploring LLM-assisted approaches for scientific information extraction and dataset enrichment in data-scarce drug discovery settings. More broadly, I aim to develop reliable, explainable, and data-efficient computational methods to support molecular design and informed decision-making in targeted protein degradation.',
+    'My current research focuses on developing AI-driven methods for PROTAC linker optimization, particularly for modelling degradation activity and cell permeability. More broadly, I aim to develop reliable, explainable, and data-efficient computational methods to support molecular design and informed decision-making in targeted protein degradation.',
   ],
   profileLinks: [
     { label: 'Email', href: `mailto:${LINKS.emailPersonal}` },
